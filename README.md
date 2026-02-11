@@ -1,14 +1,19 @@
-# Sample Hardhat Project
+# Greeter Smart Contract - Celo Sepolia
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+A simple Greeter smart contract deployed on the Celo Sepolia testnet.
 
-Try running some of the following tasks:
+## Deployed Contracts
+
+| Tool     | Contract Address                             |
+| -------- | -------------------------------------------- |
+| Hardhat  | `0x6632fe9EAA6e2f590a2CCA31871De0441DC6562c` |
+| Foundry  | `0xbB315ac98FC5D66bDBDd9B01A5eeC6bfC9e5bA5F` |
+
+## Usage
 
 ```shell
 npx hardhat help
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
+npx hardhat compile
+npx hardhat ignition deploy ./ignition/modules/Greeter.ts --network celo_sepolia
 ```
-# GreeterSmart-Contract
